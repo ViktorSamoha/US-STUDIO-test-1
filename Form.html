@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" rev="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Форма обратной связи</title>
+</head>
+
+<body>
+    <div id="container">
+        <form class="mainform" id="myForm">
+            <p class="name">
+                <label for="name">Имя</label><br>
+                <input type="text" name="name" value="Имя" onblur="if(this.value.length == 0) this.value = 'Имя'" onfocus="if(this.value == 'Имя') this.value = '' " />
+            </p>
+            <p class="phone">
+                <label for="phone">Телефон</label><br>
+                <input type="text" name="phone" value="Телефон" onblur="if(this.value.length == 0) this.value = 'Телефон'" onfocus="if(this.value == 'Телефон') this.value = '' " />
+            </p>
+            <p class="email">
+                <label for="email">E-Mail</label><br>
+                <input type="text" name="email" value="name@example.com" onblur="if(this.value.length == 0) this.value = 'name@example.com'" onfocus="if(this.value == 'name@example.com') this.value = '' " />
+            </p>
+            <p class="send">
+                <input type="submit" value="Отправить" />
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
